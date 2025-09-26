@@ -1,16 +1,30 @@
 version: 0.2
+
 env:
   runtime-versions:
     nodejs: 16
+
 phases:
   install:
     commands:
-      - node -v
-      - npm -v
+      - echo "Node version:"
+      - node -v || true
+      - echo "NPM version:"
+      - npm -v || true
+      # If the image can't pin node 16, hard-install it:
+      - |
+        if ! node -v | grep -qE '^v16\.'; then
+          echo "Installing Node 16..."
+          curl -fsSL https://rpm.nodesource.com/setup_16.x | bash -
+          yum install -y nodejs
+          node -v
+          npm -v
+        fi
       - npm ci
   build:
     commands:
       - npm run build
+
 artifacts:
   base-directory: build
   files:
