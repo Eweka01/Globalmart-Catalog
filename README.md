@@ -4,16 +4,13 @@ A CI/CD-enabled e-commerce catalog website built with **React.js**, deployed on 
 
 This project is part of my DevOps portfolio, where I not only built the pipeline but also intentionally broke and troubleshooted common deployment issues — simulating real-world production firefighting as a DevOps engineer.  
 
----
 
 ## 🚀 Demo  
 
 Visit the live demo:  
-http://your-ec2-public-ip  
+[http://your-ec2-public-ip  
+](https://reactjs-ecommerce-app.vercel.app/)
 
-*(replace with your current EC2 public IP or domain once deployed)*  
-
----
 
 ## ✨ Features  
 
@@ -23,14 +20,10 @@ http://your-ec2-public-ip
 - Real DevOps troubleshooting documented (IAM, Security Groups, CodeDeploy Agent, Webhooks)  
 - Scalable AWS infrastructure design  
 
----
-
 ## 🖼️ Screenshots  
 
- <img width="400" height="225" alt="image" src="https://github.com/user-attachments/assets/44005363-1516-4690-bddc-0e9f7c778de6" />
+![f80e68cb98b645c376a9f418196ef290](https://github.com/user-attachments/assets/0d51a125-3126-48c6-a3e8-2f160768cc80)
 
-
----
 
 ## 🛠️ Run Locally  
 
@@ -64,8 +57,6 @@ Start development server
 npm start
 ```
 
----
-
 ## ⚡ Tech Stack  
 
 - [React](https://reactjs.org/)  
@@ -75,8 +66,6 @@ npm start
 - [AWS CodeDeploy](https://aws.amazon.com/codedeploy/)  
 - [Amazon EC2](https://aws.amazon.com/ec2/)  
 - [Nginx](https://www.nginx.com/)  
-
----
 
 ## 🔧 CI/CD Architecture  
 <img width="1038" height="405" alt="image" src="https://github.com/user-attachments/assets/59462452-073f-48e4-8c77-01e3296b8037" />
@@ -90,7 +79,6 @@ flowchart LR
     E --> F[EC2 + Nginx Web Server]
 ```
 
----
 
 ## 🧨 Troubleshooting Notes  
 
@@ -103,7 +91,6 @@ During setup, I faced and resolved several real-world issues:
 
 These failures and fixes are part of the design — practicing production troubleshooting.  
 
----
 
 ## 🤝 Contributing  
 
@@ -112,20 +99,8 @@ Contributions are welcome!
 - Create a feature branch  
 - Submit a PR with your changes  
 
----
-
-## 🧹 Cleanup  
-
-To avoid AWS costs, remember to:  
-- Delete CodePipeline & CodeBuild projects  
-- Delete CodeDeploy application & deployment group  
-- Terminate EC2 instance(s)  
-- Remove IAM roles created for this project  
-
----
 
 ## 📌 Final Result  
 
 A fully automated CI/CD pipeline for a React-based e-commerce catalog, deployed on AWS, with documented troubleshooting of real-world DevOps challenges.  
 
----
