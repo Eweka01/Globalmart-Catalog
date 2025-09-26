@@ -27,7 +27,8 @@ http://your-ec2-public-ip
 
 ## 🖼️ Screenshots  
 
-![App Screenshot](https://i.ibb.co/fQ293tm/image.png)  
+ <img width="400" height="225" alt="image" src="https://github.com/user-attachments/assets/44005363-1516-4690-bddc-0e9f7c778de6" />
+
 
 ---
 
@@ -78,6 +79,7 @@ npm start
 ---
 
 ## 🔧 CI/CD Architecture  
+<img width="1038" height="405" alt="image" src="https://github.com/user-attachments/assets/59462452-073f-48e4-8c77-01e3296b8037" />
 
 ```mermaid
 flowchart LR
